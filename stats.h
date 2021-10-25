@@ -1,7 +1,7 @@
 
 struct Stats compute_statistics(const float* numberset, int setlength);
 
-typedef void (*alerter_funcptr)(float maxThreshold , struct StatscomputedStats);
+typedef void (*alerter_funcptr)(float maxThreshold , struct Stats computedStats);
 void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats);
 
 struct Stats
