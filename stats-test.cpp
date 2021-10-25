@@ -5,7 +5,7 @@
 #include "alerts.h"
 
 #include <iostream>
-using namepsace std;
+using namespace std;
 #include <stdlib.h>
 #include <math.h>
 
