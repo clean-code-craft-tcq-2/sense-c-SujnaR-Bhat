@@ -6,13 +6,13 @@
 
 void emailAlerter (float Threshold , struct Stats computedStats)
 {
-  if(computedStats.max > Treshold)
+  if(computedStats.max > Threshold)
   {
     emailAlertCallCount=1;
   }
 }
 
-void ledAlert(float Threshold, struct SttascomputedStats)
+void ledAlert(float Threshold, struct StatscomputedStats)
 {
   if(computedStats.max > Treshold)
   {
