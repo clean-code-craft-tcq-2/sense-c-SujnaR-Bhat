@@ -5,7 +5,7 @@ int emailAlertCallCount=0;
 int ledAlertCallCount =0;
 
 
-struct Stats compute_statistics(const float* numberset, int setlength)
+struct Stats compute_statistics(const float *numberset, int setlength)
 {
      Stats s;
     float total_sum =0;
@@ -49,10 +49,8 @@ void check_and_alert(float maxThreshold , alerter_funcptr alerters[],struct Stat
 {
     if(computedStats.max > maxThreshold)
     {
-        alerters[0](maxTHreshold.computedStats);
-        alerters[](maxTHreshold.computedStats);
+        alerters[0](maxThreshold,computedStats);
+        alerters[1](maxThreshold,computedStats);
     }
 }
 
-//int emailAlertCallCount = 0;
-//int ledAlertCallCount = 0;
